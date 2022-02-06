@@ -1,6 +1,5 @@
 <script context="module">
 	export const load = ({ session }) => {
-		console.log(session);
 		return {
 			props: {
 				session
