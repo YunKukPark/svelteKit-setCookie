@@ -1,10 +1,6 @@
 <script context="module">
 	export const load = ({ session }) => {
-		return {
-			props: {
-				session
-			}
-		};
+		return { props: { session } };
 	};
 </script>
 
