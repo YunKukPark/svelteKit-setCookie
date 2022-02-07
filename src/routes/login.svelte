@@ -1,18 +1,18 @@
 <script>
-	let message = '';
+  let message = '';
 
-	const login = async () => {
-		const res = await fetch('api/login', {
-			method: 'POST',
-			body: JSON.stringify({
-				username: 'Yunkuk',
-				password: '!@#$@^#$'
-			})
-		});
+  const login = async () => {
+    const res = await fetch('api/login', {
+      method: 'POST',
+      body: JSON.stringify({
+        username: 'Yunkuk',
+        password: '!@#$@^#$'
+      })
+    });
 
-		const data = await res.json();
-		message = data.message;
-	};
+    const data = await res.json();
+    message = data.message;
+  };
 </script>
 
 <h1>Login Page</h1>
@@ -20,7 +20,7 @@
 <button on:click={login}>Login</button>
 
 <style>
-	p {
-		color: tomato;
-	}
+  p {
+    color: tomato;
+  }
 </style>
